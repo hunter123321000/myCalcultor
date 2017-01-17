@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fH4-IP-KPZ">
+                                <rect key="frame" x="0.0" y="0.5" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="17" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhT-xy-Po2" customClass="PaddingLabel" customModule="MyCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="133.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uKq-L2-8cO">
+                                        <rect key="frame" x="0.0" y="133.5" width="375" height="133.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vU6-YF-rmv" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="133.5"/>
+                                                <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sqh-mP-ZGj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWU-bk-WXr" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="94" y="0.0" width="93.5" height="133.5"/>
+                                                <state key="normal" title="8"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BKk-9c-lyU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsq-bG-XXI" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="187.5" y="0.0" width="94" height="133.5"/>
+                                                <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v2d-ye-Kr0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMo-cl-PqP" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="133.5"/>
+                                                <state key="normal" title="x"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ibg-tT-gza"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="34W-Rg-jj0">
+                                        <rect key="frame" x="0.0" y="267" width="375" height="133"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VrL-t0-xty" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="133"/>
+                                                <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Or3-wD-prU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsC-xg-kbo" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="94" y="0.0" width="93.5" height="133"/>
+                                                <state key="normal" title="5"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZqV-TC-Bma"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stm-IJ-BVM" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="187.5" y="0.0" width="94" height="133"/>
+                                                <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9YN-GZ-Xxe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOb-KV-SAl" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="133"/>
+                                                <state key="normal" title="-"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZdI-QH-33L"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nr1-Qv-Sej">
+                                        <rect key="frame" x="0.0" y="400" width="375" height="133.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEg-nk-gPU" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="133.5"/>
+                                                <state key="normal" title="1"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s7P-Cs-5ku"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfH-RM-6YU" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="94" y="0.0" width="93.5" height="133.5"/>
+                                                <state key="normal" title="2"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yzQ-i6-H8p"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJW-7i-9aT" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="187.5" y="0.0" width="94" height="133.5"/>
+                                                <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MDb-vl-pzF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zS-eA-8cI" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="133.5"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l7g-XF-7uA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="S7J-cj-4ij">
+                                        <rect key="frame" x="0.0" y="533.5" width="375" height="133.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzs-u3-aoT" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="133.5"/>
+                                                <state key="normal" title="C"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o2d-L6-snA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKq-h2-jcE" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="94" y="0.0" width="93.5" height="133.5"/>
+                                                <state key="normal" title="0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GbK-h8-XlC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0O-2w-NyK" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="187.5" y="0.0" width="94" height="133.5"/>
+                                                <state key="normal" title="="/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vih-ud-Rud"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHz-wV-bHR" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="133.5"/>
+                                                <state key="normal" title="/"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3A-U9-4sm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fH4-IP-KPZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9yv-jf-asR"/>
+                            <constraint firstItem="fH4-IP-KPZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="g1V-67-5Ie"/>
+                            <constraint firstItem="fH4-IP-KPZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="jUT-pi-TXL"/>
+                            <constraint firstItem="fH4-IP-KPZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xfs-Ah-a1p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lb_result" destination="hhT-xy-Po2" id="roF-CN-jJ0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="64"/>
+        </scene>
+    </scenes>
+</document>
