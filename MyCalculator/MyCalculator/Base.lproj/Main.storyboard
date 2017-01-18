@@ -43,6 +43,11 @@
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWU-bk-WXr" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="94" y="0.0" width="93.5" height="133.5"/>
                                                 <state key="normal" title="8"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BKk-9c-lyU"/>
                                                 </connections>
@@ -142,14 +147,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKq-h2-jcE" customClass="BorderedButton" customModule="MyCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="94" y="0.0" width="93.5" height="133.5"/>
                                                 <state key="normal" title="0"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GbK-h8-XlC"/>
                                                 </connections>

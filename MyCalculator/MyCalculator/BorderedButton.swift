@@ -7,7 +7,8 @@
 //
 
 import UIKit
-class BorderedButton: UIButton {
+
+@IBDesignable class BorderedButton: UIButton {
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius
@@ -24,6 +25,11 @@ class BorderedButton: UIButton {
             layer.borderColor = borderColor?.cgColor
         }
     }
+    
+    required override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
